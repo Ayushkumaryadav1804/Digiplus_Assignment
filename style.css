@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.tree-container {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.tree {
+    position: relative;
+}
+
+.tree ul {
+    padding-left: 1em;
+    list-style: none;
+}
+
+.tree ul ul {
+    margin-left: 1em;
+}
+
+.tree ul li {
+    margin: 0;
+    padding: 0 0 0 2em;
+    line-height: 1.5em;
+    position: relative;
+}
+
+.tree ul li::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: #555;
+    display: inline-block;
+    position: absolute;
+    left: -1em;
+    top: 50%;
+    margin-top: -0.5em;
+}
+
+.tree input[type="text"] {
+    width: 200px;
+    padding: 5px;
+}
+
+.tree button {
+    margin: 5px;
+}
